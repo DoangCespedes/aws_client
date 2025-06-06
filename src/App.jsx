@@ -27,7 +27,7 @@ function App() {
       alert('Primero sube una imagen');
       return;
     }
-    const res = await axios.post('http://localhost:3000/procesar', { filename });
+    const res = await axios.post('http://localhost:3000/procesar2', { filename });
     setText(res.data.texto)
     alert('Texto detectado: ' + res.data.texto);
   }
